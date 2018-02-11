@@ -23,5 +23,9 @@ cc.Class({
 
     },
 
+    onCollisionEnter(other, self){
+        self.node.opacity = self.node.opacity - 10;
+    },
+
     // update (dt) {},
 });

@@ -55,11 +55,11 @@ cc.Class({
 
     onCollisionEnter: function (other, self) {
         cc.log("----this is me bullet onCollisionEnter")
-        // this.goDestroy();
+        this.goDestroy(other, self);
     },
 
 
-    goDestroy(){
+    goDestroy(other, self){
         var animation = this.node.getComponent(cc.Animation);
         animation.play("bulletBoom").once("finished", function(){
             self.node.destroy();

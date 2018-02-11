@@ -10,7 +10,7 @@
   },
   {
     "__type__": "cc.Node",
-    "_name": "shop",
+    "_name": "ship",
     "_objFlags": 0,
     "_parent": null,
     "_children": [
@@ -65,7 +65,7 @@
     "_localZOrder": 0,
     "_globalZOrder": 0,
     "_opacityModifyRGB": false,
-    "groupIndex": 0
+    "groupIndex": 2
   },
   {
     "__type__": "cc.Node",

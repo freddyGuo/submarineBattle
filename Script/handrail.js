@@ -38,7 +38,6 @@ cc.Class({
     },
 
     onCollisionEnter(other, self){
-        cc.log("----onCollisionEnter Lanban--self---", self, other)
         other.node.destroy();
     },
 

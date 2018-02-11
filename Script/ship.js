@@ -20,14 +20,24 @@ cc.Class({
     onLoad () {
         this.biubiuTag = setInterval(function(){
             this.biubiu();
-        }.bind(this), 200);
+        }.bind(this),1400);
         this.speedSystem = require("SpeedSys").new();
         this.speedSystem.init(this);
-        this.speedSystem.setSpeed(cc.p(100, 0));
+      
     },
 
     start () {
 
+    },
+
+    initCfg(cfgData){
+        this.node.setPosition(cfgData.pos);
+        this.node.scale = cfgData.scale;
+        this.speedSystem.setSpeed(cfgData.speed);
+        if(cfgData.direction > 0){
+            this.node.scaleX =  0 - this.node.scaleX;
+        }
+       
     },
 
     update(dt){
